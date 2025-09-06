@@ -12,8 +12,7 @@ const gradeValue = {A: 5, B: 4, C: 3, D: 2, E: 1, F: 0}
 
 let gradePoint = 0
 const getHonoursDegree = (value)=>{
-    if(value >= 5){
-    }else if(value > 4.5 && value <= 5){
+ if(value > 4.5 && value <= 5){
         return "First Class"
     }
     else if(value > 3.5){
@@ -133,3 +132,4 @@ const courseUnits  = document.querySelectorAll(".units")
 
 
     deleteCourse()  
+
