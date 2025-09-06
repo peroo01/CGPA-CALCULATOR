@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GP calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="cgpa-container" >
+        <h1 data-name="baa">CGPA CALCULATOR</h1>
+        <div class="cgpa-results" >
+            <div class="gp-score">
+                <label for="gp">grade points:</label>
+                <output name="gp" id="gp">0</output>
+            </div>
+            <div class="gp-degree">
+                <label for="honours">Honours:</label>
+                <output name="honours" id="honours">-</output>
+            </div>
+            <div class="gp-semester">
+                <label for="semester">semester:</label>
+                <output name="semester" id="semester">First</output>
+            </div>
+            <p id="message"></p>
+        </div>
+
+        <div class="resultsinfo-container">
+
+            <div class="course-info-pg">
+                <div id="course-info-container">
+                    <fieldset id="fieldset-1">
+                        <span data-name="course"><input  name="course-code" type="text" class="course-code" id="course-code-1" ></span>
+                        <span  data-name="grade"><select name="grade" id="grade-1" class="mark">
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                            <option value="F">F</option>
+                        </select></span>
+                        <span data-name="units"><input  name="units" type="number" min="0"  class="units" id="unit-1"></span>
+                        <i hidden class='bx  bx-trash hide'  ></i> 
+                    </fieldset>
+                </div>
+                <button type="submit" id="add">Add</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
