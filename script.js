@@ -13,18 +13,19 @@ const gradeValue = {A: 5, B: 4, C: 3, D: 2, E: 1, F: 0}
 let gradePoint = 0
 const getHonoursDegree = (value)=>{
     if(value >= 5){
+    }else if(value > 4.5 && value <= 5){
         return "First Class"
-    }else if(value > 4.5){
-        return "Second Class (U)"
     }
     else if(value > 3.5){
-        return "Second Class (L)"
+        return "Second Class (U)"
     }else if(value > 2.4 ){
-        return "Third Class"
+        return "Second Class (L)"
     }else if(value > 1){
+        return "Third Class"
+    }else if (value > 0){
         return "Pass"
     }else{
-        return "Error!"
+        return "Fail"
     }
 }
 
@@ -129,5 +130,6 @@ const courseUnits  = document.querySelectorAll(".units")
              e.target.parentElement.remove()
          }
      })}
+
 
     deleteCourse()  
